@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var helmet = require('helmet');
 var base58 = require('./base58.js');
 
 var Url = require('./models/url');
@@ -12,6 +13,7 @@ Url.sync();
 var routes = require('./routes/index');
 
 var app = express();
+app.use(helmet());
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
