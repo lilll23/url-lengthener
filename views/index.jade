@@ -1,0 +1,37 @@
+doctype html
+html(lang="ja")
+  head
+    title URLfu*k - URL Lengthener
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.4.0/EQCSS.min.js")
+    link(href='stylesheets/style.css', rel='stylesheet')
+  body
+    .site-wrapper
+      .site-wrapper-inner
+        .main-container
+          .inner.cover
+            a(href='/')
+              span.glyphicon.glyphicon-link
+            h1 URLf*ck
+            h4 - URL Lengthener -
+            .row
+              .col-lg-12
+                .input-group.input-group-lg
+                  input#url-field.form-control(type='text', placeholder='Paste a link...')
+                  span.input-group-btn
+                    button.btn.btn-lengthen(type='button') Lengthen
+              .col-lg-12
+                blockquote.quote
+                  p
+                    q The HTTP protocol does not place any a priori limit on the length of a URI.
+                  footer 
+                    |IETF,  
+                    a(href='https://www.ietf.org/rfc/rfc2616.txt') RFC2616 HTTP/1.1
+                #link
+                h5 To the memory of 
+                  a(href='https://goo.gl/') https://goo.gl/
+    script(src='/javascripts/bundle.js')
