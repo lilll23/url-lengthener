@@ -5,7 +5,7 @@ const sequelize = new Sequelize(
   {
 	  logging: true,
 	  dialect: 'postgres',
-	  dialectOptions: {//以下を追加
+	  dialectOptions: {
 		ssl: {
 			require: true,
 			rejectUnauthorized: false
