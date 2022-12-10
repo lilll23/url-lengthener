@@ -11,7 +11,7 @@
     "cookie-parser": "~1.4.5",
     "debug": "~4.1.1",
     "eqcss": "^1.9.2",
-    "express": "~4.17.1",
+    "express": "~4.17.3",
     "helmet": "^3.22.0",
     "jade": "~1.11.0",
     "jquery": "^3.5.0",
